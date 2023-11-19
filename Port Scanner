@@ -4,11 +4,13 @@ import socket
 import concurrent.futures
 from datetime import datetime
 
+# Create ascii banner
 def ascii_banner():
     # Generate ASCII banner
     ascii_banner = pyfiglet.figlet_format("Port Scanning")
     print(ascii_banner)
 
+# Scanned ports
 def ports_scanned(target, port_start, port_end):
     try:
         print("-" * 50)
